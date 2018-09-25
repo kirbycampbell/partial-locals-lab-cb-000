@@ -14,6 +14,6 @@ class Student < ActiveRecord::Base
   has_many :classroom_students
   has_many :classrooms, through: :classroom_students
   validates :name, presence: true
-validates :hometown, presence: true
-validates :birthday, presence: true
+  validates :hometown, presence: true
+  validates :birthday, presence: true
 end
